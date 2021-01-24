@@ -33,17 +33,17 @@ const CharacterList: React.FC = () => {
   const badges = {
     unknown: {
       color: "gray.400",
-      statusText: "Desconocido",
+      statusText: "No identificado",
       icon: <Meh size={18} />,
     },
     Alive: {
       color: "green.400",
-      statusText: "Vivo",
+      statusText: "Con vida",
       icon: <Smile size={18} />,
     },
     Dead: {
       color: "red.400",
-      statusText: "Muerto",
+      statusText: "Sin vida",
       icon: <Frown size={18} />,
     },
   };

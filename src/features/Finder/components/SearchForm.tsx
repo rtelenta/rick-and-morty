@@ -11,13 +11,13 @@ import useFinder from "state/finder/useFinder";
 
 const SearchForm: React.FC = () => {
   const { finder, setSearch } = useFinder();
-  const [text, setText] = useState("");
+  const [name, setName] = useState("");
   const [status, setStatus] = useState("");
 
   const bgInputs = useColorModeValue("white", "gray.700");
 
   const handleSubmit = (e: React.FormEvent<HTMLElement>) => {
-    setSearch(text, status);
+    setSearch(name, status);
 
     e.preventDefault();
   };
@@ -41,7 +41,7 @@ const SearchForm: React.FC = () => {
           size="lg"
           mr={[0, 4]}
           mb={[4, 0]}
-          onChange={(e) => setText(e.target.value)}
+          onChange={(e) => setName(e.target.value)}
         />
 
         <Select
@@ -53,9 +53,9 @@ const SearchForm: React.FC = () => {
           mb={[4, 0]}
           onChange={(e) => setStatus(e.target.value)}
         >
-          <option value="alive">Vivo</option>
-          <option value="dead">Muerto</option>
-          <option value="unknown">Desconocido</option>
+          <option value="alive">Con vida</option>
+          <option value="dead">Sin vida</option>
+          <option value="unknown">No identificado</option>
         </Select>
 
         <Button

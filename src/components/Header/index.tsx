@@ -22,11 +22,33 @@ const Header: React.FC = () => {
 
   const SwitchIcon = useColorModeValue(Moon, Sun);
 
+  const reloadPage = () => window.location.reload();
+
   return (
     <Box bg={bgHeader} borderBottom="1px" borderColor={borderColor}>
       <Box mx="auto" maxW="6xl" py={4} px={[4, 8]}>
         <Flex justifyContent="space-between" alignItems="center">
-          <Image src={Logo} alt="Rick and Morty" maxW={["150px", "200px"]} />
+          <IconButton
+            aria-label="Rick and Morty logo"
+            variant="ghost"
+            _hover={{
+              bg: "transparent",
+            }}
+            _active={{
+              bg: "transparent",
+            }}
+            _focus={{
+              outline: "none",
+            }}
+            icon={
+              <Image
+                src={Logo}
+                alt="Rick and Morty"
+                maxW={["150px", "200px"]}
+              />
+            }
+            onClick={reloadPage}
+          />
 
           <IconButton
             variant="ghost"

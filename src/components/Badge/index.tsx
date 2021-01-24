@@ -18,7 +18,10 @@ const Badge: React.FC<IBadgeProps> = ({ children, bg, icon }) => {
       bg={bg}
       alignItems="center"
     >
-      <Box mr={1}>{children}</Box> {icon}
+      <Box mr={1} whiteSpace="nowrap">
+        {children}
+      </Box>{" "}
+      {icon}
     </Flex>
   );
 };
