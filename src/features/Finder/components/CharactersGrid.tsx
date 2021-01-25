@@ -9,7 +9,7 @@ const CharactersGrid: React.FC<ICharactersGridProps> = ({
   gridRef,
 }) => {
   return (
-    <Box my={16}>
+    <Box my={16} data-testid="CharactersGrid">
       <Grid
         templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)"]}
         columnGap={12}

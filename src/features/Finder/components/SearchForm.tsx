@@ -23,7 +23,12 @@ const SearchForm: React.FC = () => {
   };
 
   return (
-    <Flex flexDirection="column" alignItems="center" py={12}>
+    <Flex
+      flexDirection="column"
+      alignItems="center"
+      py={12}
+      data-testid="SearchForm"
+    >
       <Heading as="h2" size="xl" mb={8} textAlign="center">
         ¿Qué personaje estas buscando?
       </Heading>
@@ -45,6 +50,7 @@ const SearchForm: React.FC = () => {
         />
 
         <Select
+          data-testid="SearchForm__select"
           placeholder="Selecciona un estado"
           bg={bgInputs}
           focusBorderColor="teal.400"
@@ -53,9 +59,15 @@ const SearchForm: React.FC = () => {
           mb={[4, 0]}
           onChange={(e) => setStatus(e.target.value)}
         >
-          <option value="alive">Con vida</option>
-          <option value="dead">Sin vida</option>
-          <option value="unknown">No identificado</option>
+          <option value="alive" data-testid="alive">
+            Con vida
+          </option>
+          <option value="dead" data-testid="dead">
+            Sin vida
+          </option>
+          <option value="unknown" data-testid="unknown">
+            No identificado
+          </option>
         </Select>
 
         <Button

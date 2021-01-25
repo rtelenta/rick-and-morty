@@ -32,14 +32,16 @@ const AlertMessage: React.FC<IAlertMessageProps> = ({ children, actions }) => {
 
       <Image
         src={PlaceholderDarkImg}
-        alt="R and M"
+        fallbackSrc={PlaceholderDarkImg}
+        alt="R and M light"
         display={colorMode === "light" ? "block" : "none"}
         opacity={0.2}
       />
 
       <Image
         src={PlaceholderImg}
-        alt="R and M"
+        fallbackSrc={PlaceholderImg}
+        alt="R and M dark"
         display={colorMode === "dark" ? "block" : "none"}
       />
     </Flex>

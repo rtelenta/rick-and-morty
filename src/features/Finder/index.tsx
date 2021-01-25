@@ -5,7 +5,7 @@ import SearchForm from "./components/SearchForm";
 
 const Finder: React.FC = () => {
   return (
-    <Box>
+    <Box data-testid="Finder">
       <SearchForm />
       <CharacterList />
       <BackToTop />
