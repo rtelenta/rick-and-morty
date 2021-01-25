@@ -59,7 +59,11 @@ const CharacterList: React.FC = () => {
   }
 
   if (isError) {
-    return <AlertMessage>Personaje no encontrado</AlertMessage>;
+    return (
+      <AlertMessage>
+        En esta realidad no se encuentra el personaje que estas buscando
+      </AlertMessage>
+    );
   }
 
   return (
