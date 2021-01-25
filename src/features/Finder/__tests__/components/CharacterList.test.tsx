@@ -50,6 +50,8 @@ describe("CharacterList tests", () => {
 
     await waitForElementToBeRemoved(loader[0]);
 
-    expect(screen.getByText("Personaje no encontrado")).toBeInTheDocument();
+    expect(
+      screen.getByText("Personaje no encontrado en esta realidad")
+    ).toBeInTheDocument();
   });
 });
