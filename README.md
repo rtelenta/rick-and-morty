@@ -65,43 +65,41 @@ yarn test:coverage
 _Dentro de la carpeta **components** se encuentran los componentes generales acompañados cada uno de su respectivo test. Ejemplo:_
 
 ```
-components
-  CardImage
-    CardImage.test.tsx
-    index.tsx
+📦components
+ ┣ 📂CardImage
+ ┃ ┣ 📜CardImage.test.tsx
+ ┃ ┗ 📜index.tsx
+ ┣ 📂...
 ```
 
 _Dentro de la carpeta **features** se encuentra una carpeta Finder con todos los archivos y tests del buscador. Ejemplo:_
 
 ```
-features
-  Finder
-    index.tsx
-
-    __tests__
-      Finder.test.tsx
-
-      components
-        SearchForm.test.tsx
-        ...
-
-    components
-      SearchForm.tsx
-      ...
-
-    graphql
-      queries
-        getCharactersQuery.ts
-        ...
-
-      types
-        charactersDataType.ts
-        ...
-    hooks
-      useCharacters.ts
-
-    services
-      getCharacters.ts
+📦features
+ ┗ 📂Finder
+ ┃ ┣ 📂components
+ ┃ ┃ ┣ 📜AlertMessage.tsx
+ ┃ ┃ ┣ 📜CharacterList.tsx
+ ┃ ┃ ┣ 📜CharactersGrid.tsx
+ ┃ ┃ ┗ 📜SearchForm.tsx
+ ┃ ┣ 📂graphql
+ ┃ ┃ ┣ 📂queries
+ ┃ ┃ ┃ ┗ 📜getCharactersQuery.ts
+ ┃ ┃ ┗ 📂types
+ ┃ ┃ ┃ ┣ 📜charactersDataType.ts
+ ┃ ┃ ┃ ┗ 📜charactersVarsType.ts
+ ┃ ┣ 📂hooks
+ ┃ ┃ ┗ 📜useCharacters.ts
+ ┃ ┣ 📂services
+ ┃ ┃ ┗ 📜getCharacters.ts
+ ┃ ┣ 📂__tests__
+ ┃ ┃ ┣ 📂components
+ ┃ ┃ ┃ ┣ 📜AlertMessage.test.tsx
+ ┃ ┃ ┃ ┣ 📜CharacterList.test.tsx
+ ┃ ┃ ┃ ┣ 📜CharactersGrid.test.tsx
+ ┃ ┃ ┃ ┗ 📜SearchForm.test.tsx
+ ┃ ┃ ┗ 📜Finder.test.tsx
+ ┃ ┗ 📜index.tsx
 ```
 
 ## Construido con 🛠️
