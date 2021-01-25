@@ -25,11 +25,18 @@ const Header: React.FC = () => {
   const reloadPage = () => window.location.reload();
 
   return (
-    <Box bg={bgHeader} borderBottom="1px" borderColor={borderColor}>
+    <Box
+      bg={bgHeader}
+      borderBottom="1px"
+      borderColor={borderColor}
+      as="header"
+      data-testid="Header"
+    >
       <Box mx="auto" maxW="6xl" py={4} px={[4, 8]}>
         <Flex justifyContent="space-between" alignItems="center">
           <IconButton
-            aria-label="Rick and Morty logo"
+            data-testid="Header__logo"
+            aria-label="Rick and Morty logo button"
             variant="ghost"
             _hover={{
               bg: "transparent",
@@ -43,7 +50,7 @@ const Header: React.FC = () => {
             icon={
               <Image
                 src={Logo}
-                alt="Rick and Morty"
+                alt="Rick and Morty logo"
                 maxW={["150px", "200px"]}
               />
             }
@@ -51,6 +58,7 @@ const Header: React.FC = () => {
           />
 
           <IconButton
+            data-testid="Header__switchMode"
             variant="ghost"
             color="current"
             size="xlg"
@@ -72,7 +80,7 @@ const Header: React.FC = () => {
 
                   <Image
                     src={ToxicRickNMorty}
-                    alt="R and M"
+                    alt="Toxic R and M"
                     display={colorMode === "dark" ? "block" : "none"}
                   />
                 </Box>
