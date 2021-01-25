@@ -2,6 +2,11 @@
 
 _Buscador de los personajes de Rick and Morty_
 
+Funcionalidades principales:
+- Versión clara/oscura
+- Buscador de personajes
+- Filtro por estado
+
 ## Comenzando 🚀
 
 _Puedes ver una DEMO del proyeto en este enlace [https://rick-and-morty.rtelenta.vercel.app/](https://rick-and-morty.rtelenta.vercel.app/)._
