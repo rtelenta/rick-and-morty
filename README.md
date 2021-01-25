@@ -97,6 +97,11 @@ _Dentro de la carpeta **features** se encuentra una carpeta Finder con todos los
  ┃ ┃ ┗ 📜Finder.test.tsx
  ┃ ┗ 📜index.tsx
 ```
+## Capturas de pantalla 💻
+
+Versión clara             |  Versión oscura 
+:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/13630376/105731238-35f64180-5efd-11eb-82af-8aad9e646431.png)  |  ![](https://user-images.githubusercontent.com/13630376/105731005-f16aa600-5efc-11eb-8813-f90721e63adb.png)
 
 ## Construido con 🛠️
 
