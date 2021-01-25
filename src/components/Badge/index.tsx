@@ -8,6 +8,7 @@ interface IBadgeProps {
 const Badge: React.FC<IBadgeProps> = ({ children, bg, icon }) => {
   return (
     <Flex
+      data-testid="Badge"
       rounded="full"
       px={3}
       py={1}
