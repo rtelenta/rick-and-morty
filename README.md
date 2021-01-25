@@ -78,16 +78,14 @@ _Dentro de la carpeta **features** se encuentra una carpeta Finder con todos los
 📦features
  ┗ 📂Finder
  ┃ ┣ 📂components
- ┃ ┃ ┣ 📜AlertMessage.tsx
- ┃ ┃ ┣ 📜CharacterList.tsx
- ┃ ┃ ┣ 📜CharactersGrid.tsx
- ┃ ┃ ┗ 📜SearchForm.tsx
+ ┃ ┃ ┣ 📜SearchForm.tsx
+ ┃ ┃ ┗ 📜...
  ┃ ┣ 📂graphql
  ┃ ┃ ┣ 📂queries
  ┃ ┃ ┃ ┗ 📜getCharactersQuery.ts
  ┃ ┃ ┗ 📂types
  ┃ ┃ ┃ ┣ 📜charactersDataType.ts
- ┃ ┃ ┃ ┗ 📜charactersVarsType.ts
+ ┃ ┃ ┃ ┗ ...
  ┃ ┣ 📂hooks
  ┃ ┃ ┗ 📜useCharacters.ts
  ┃ ┣ 📂services
@@ -95,9 +93,7 @@ _Dentro de la carpeta **features** se encuentra una carpeta Finder con todos los
  ┃ ┣ 📂__tests__
  ┃ ┃ ┣ 📂components
  ┃ ┃ ┃ ┣ 📜AlertMessage.test.tsx
- ┃ ┃ ┃ ┣ 📜CharacterList.test.tsx
- ┃ ┃ ┃ ┣ 📜CharactersGrid.test.tsx
- ┃ ┃ ┃ ┗ 📜SearchForm.test.tsx
+ ┃ ┃ ┃ ┣ 📜...
  ┃ ┃ ┗ 📜Finder.test.tsx
  ┃ ┗ 📜index.tsx
 ```
