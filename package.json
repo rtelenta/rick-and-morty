@@ -6,13 +6,6 @@
     "@chakra-ui/react": "^1.1.5",
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.53",
-    "@types/react-dom": "^16.9.8",
     "framer-motion": "^3.2.2-rc.1",
     "graphql": "^15.4.0",
     "graphql-request": "^3.4.0",
@@ -21,14 +14,13 @@
     "react-feather": "^2.0.9",
     "react-infinite-scroll-hook": "^3.0.0",
     "react-query": "^3.6.0",
-    "react-scripts": "4.0.1",
-    "typescript": "^4.0.3",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "test:coverage": "react-scripts test src/ --coverage"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +38,24 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "msw": "^0.25.0",
+    "react-scripts": "4.0.1",
+    "typescript": "^4.0.3"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.{ts,tsx}",
+      "src/features/**/*.{ts,tsx}"
     ]
   }
 }
