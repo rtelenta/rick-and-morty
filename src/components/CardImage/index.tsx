@@ -25,7 +25,7 @@ const CardImage: React.FC<ICardImageProps> = ({
   const descriptionColor = useColorModeValue("cyan.600", "cyan.200");
 
   return (
-    <Box position="relative">
+    <Box position="relative" data-testid="CardImage">
       <Box position="relative">
         <Box
           position="absolute"
