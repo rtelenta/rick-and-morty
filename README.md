@@ -9,7 +9,7 @@ Funcionalidades principales:
 
 ## Comenzando 🚀
 
-_Puedes ver una DEMO del proyeto en este enlace [https://rick-and-morty.rtelenta.vercel.app/](https://rick-and-morty.rtelenta.vercel.app/)._
+_Puedes ver una DEMO del proyeto en este enlace [https://rtelenta.github.io/rick-and-morty/](https://rtelenta.github.io/rick-and-morty/)._
 
 Mira **Instalación** para conocer ejecutarlo en un ambiente local.
 
